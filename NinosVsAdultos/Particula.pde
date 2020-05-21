@@ -1,0 +1,25 @@
+class Particula
+{
+  int posx,posy,direccion;
+  
+  Particula(int posx_, int posy_, int direccion_)
+  {
+    posx=posx_;
+    posy=posy_;
+    direccion=direccion_;
+  }
+  
+  void display()
+  {
+   
+    image(poder,posx,posy,70,70);
+    
+    //ellipse(posx,posy,50,50);
+  }
+  
+  void movimiento()
+  {
+    posx+=direccion;
+  }
+  
+}
